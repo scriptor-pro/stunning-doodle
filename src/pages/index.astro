@@ -1,0 +1,16 @@
+---
+---
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mon blog Astro</title>
+  </head>
+  <body>
+    <h1>Mon blog Astro</h1>
+    <ul>
+      {(await Astro.glob('./posts/*.md')).map(post => (
+        <li><a href={post.url}>{post.frontmatter.title}</a></li>
+      ))}
+    </ul>
+  </body>
+</html>
