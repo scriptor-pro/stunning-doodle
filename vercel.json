@@ -1,4 +1,0 @@
-{
-  "buildCommand": "pnpm install && pnpm astro build && pnpm pagefind --site dist",
-  "outputDirectory": "dist"
-}
